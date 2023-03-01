@@ -8,3 +8,7 @@
   width: 800px;
   margin: auto;
 }
+
+ul{
+  list-style: none;
+}
