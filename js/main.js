@@ -15,15 +15,11 @@ const listDom = document.querySelector('ul');
 
 let i = 0;
 
-let newListItem;
-
 while ( i < shopList.length ){
 
   const listItem = `<li class="item">${shopList[i]}</li>`;
   listDom.innerHTML += listItem;
 
-  newListItem = listItem;
-  
   i ++;
 }
 
@@ -39,7 +35,8 @@ addListDom.addEventListener('click',
 
     console.log(shopList);
 
-    newListItem.innerHTML += newItem;
+    const listItem = `<li class="item">${newItem}</li>`;
+    listDom.innerHTML += listItem;
 
     
   }
@@ -47,27 +44,3 @@ addListDom.addEventListener('click',
 )
 
 
-/*
-
-let listaCompleta = false;
-
-const itemDaInserire = prompt('Aggiungi elemento alla lista');
-
-
-for (let c = 0; c < listaSpesa.length; c++){
-
-  const currentItem = listaSpesa[c];
-
-  if (currentItem == itemDaInserire){
-    listaCompleta = true;
-}
-
-}
-
-if (listaCompleta){
-  console.log('lista completa');
-}else{
-  listaSpesa.push(itemDaInserire);
-}
-
-*/
